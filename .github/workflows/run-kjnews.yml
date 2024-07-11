@@ -21,7 +21,7 @@ jobs:
              pip install webdriver-manager selenium
              pip install undetected-chromedriver
              pip install chromedriver-py
-             pip install https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
+             sudo apt-get update
 
       - name: Run KJnews
         run: python main.py
