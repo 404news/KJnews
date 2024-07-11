@@ -11,6 +11,9 @@ import gspread
 import pandas as pd
 import os
 import json
+from pdf2image import convert_from_path
+from PIL import Image
+from urllib.parse import urlparse, unquote
 
 # ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
