@@ -4,3 +4,5 @@ selenium
 pandas
 gspread
 google-auth
+pdf2image
+Pillow
