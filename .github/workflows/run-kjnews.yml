@@ -22,7 +22,7 @@ jobs:
              pip install undetected-chromedriver
              pip install chromedriver-py
              pip install pyarrow
-             pip install python-poppler
+             git clone https://anongit.freedesktop.org/git/poppler/poppler.git
 
       - name: Run KJnews
         run: python main.py
