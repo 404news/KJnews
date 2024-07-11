@@ -21,7 +21,14 @@ jobs:
              pip install webdriver-manager selenium
              pip install undetected-chromedriver
              pip install chromedriver-py
-             git clone https://github.com/Belval/pdf2image
+      - name: Download and Install Poppler
+        run: |
+          wget https://poppler_url/poppler-xx.tar.gz
+          tar -xzvf poppler-xx.tar.gz
+          cd poppler-xx
+          ./configure
+          make
+          sudo make install
 
       - name: Run KJnews
         run: python main.py
