@@ -24,7 +24,7 @@ jobs:
       - name: Download and Install Poppler
         run: |
           wget https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
-          tar -xzvf poppler-xx.tar.gz
+          tar -xf poppler-24.07.0.tar.xz
           cd poppler-xx
           ./configure
           make
