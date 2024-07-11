@@ -56,7 +56,7 @@ def find_nid(title, text):
 def download_file(url, folder_path, idx):
     # 解析URL獲取文件名
     parsed_url = urlparse(url)
-    file_name = os.path.join(folder_path, f'{idx:03} - {unquote(os.path.basename(parsed_url.path))}')
+    file_name = os.path.join(folder_path, f'{idx} - {unquote(os.path.basename(parsed_url.path))}')
     
     # 發送請求下載文件
     response = requests.get(url)
