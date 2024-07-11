@@ -28,7 +28,7 @@ jobs:
           cd poppler-24.07.0
           mkdir build
           cd build
-          cmake -DENABLE_NSS3=OFF -DENABLE_GPGME=OFF -DENABLE_QT5=OFF -DENABLE_QT6=OFF -DENABLE_SPLASH=OFF ..
+          cmake -DENABLE_NSS3=OFF -DENABLE_GPGME=OFF -DENABLE_QT5=OFF -DENABLE_QT6=OFF -DENABLE_SPLASH=OFF .. -DENABLE_BOOST=OFF
           make
           sudo make install
 
