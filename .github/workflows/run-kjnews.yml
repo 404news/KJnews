@@ -22,6 +22,7 @@ jobs:
              pip install undetected-chromedriver
              pip install chromedriver-py
              pip install pyarrow
+             pip install poppler
 
       - name: Run KJnews
         run: python main.py
