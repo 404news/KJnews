@@ -22,8 +22,7 @@ jobs:
              pip install undetected-chromedriver
              pip install chromedriver-py
              pip install pyarrow
-             sudo apt-get update
-             sudo apt-get install -y poppler-utils
+             sudo apt-get update && sudo apt-get install -y poppler-utils
 
       - name: Run KJnews
         run: python main.py
