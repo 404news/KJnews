@@ -21,7 +21,7 @@ jobs:
              pip install webdriver-manager selenium
              pip install undetected-chromedriver
              pip install chromedriver-py
-             pip install pyarrow
+             git clone https://github.com/Belval/pdf2image
 
       - name: Run KJnews
         run: python main.py
