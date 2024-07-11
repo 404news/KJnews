@@ -503,12 +503,14 @@ def main():
 input_path = './input'
 output_path = './output'
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-  try_times_limit = 2
-  for _ in range(try_times_limit):
-    try:
-      main()
-      break
-    except:
-      next
+#   try_times_limit = 2
+#   for _ in range(try_times_limit):
+#     try:
+#       main()
+#       break
+#     except:
+#       next
+
+main()
