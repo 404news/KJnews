@@ -23,7 +23,7 @@ jobs:
              pip install chromedriver-py
       - name: Download and Install Poppler
         run: |
-          wget https://poppler_url/poppler-xx.tar.gz
+          wget https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
           tar -xzvf poppler-xx.tar.gz
           cd poppler-xx
           ./configure
