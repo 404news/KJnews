@@ -6,3 +6,4 @@ gspread
 google-auth
 pdf2image
 Pillow
+urlparse
