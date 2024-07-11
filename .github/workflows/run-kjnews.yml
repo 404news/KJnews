@@ -21,7 +21,7 @@ jobs:
              pip install webdriver-manager selenium
              pip install undetected-chromedriver
              pip install chromedriver-py
-             sudo apt-get update
+             pip install pyarrow
 
       - name: Run KJnews
         run: python main.py
