@@ -28,10 +28,9 @@ jobs:
           cd poppler-24.07.0
           mkdir build
           cd build
-          cmake -DENABLE_NSS3=OFF -DENABLE_GPGME=OFF ..
+          cmake -DENABLE_NSS3=OFF -DENABLE_GPGME=OFF -DENABLE_QT5=OFF ..
           make
           sudo make install
-
 
       - name: Run KJnews
         run: python main.py
