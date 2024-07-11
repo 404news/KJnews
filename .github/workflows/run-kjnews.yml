@@ -26,14 +26,11 @@ jobs:
           wget https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
           tar -xf poppler-24.07.0.tar.xz
           cd poppler-24.07.0
-          # ./poppler
-          # make
-          # sudo make install
           mkdir build
           cd build
-          cmake ..
+          cmake -DENABLE_NSS3=OFF ..
           make
-          make install
+          sudo make install
 
       - name: Run KJnews
         run: python main.py
