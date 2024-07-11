@@ -21,8 +21,7 @@ jobs:
              pip install webdriver-manager selenium
              pip install undetected-chromedriver
              pip install chromedriver-py
-             pip install pyarrow
-             git clone https://anongit.freedesktop.org/git/poppler/poppler.git
+             pip install https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
 
       - name: Run KJnews
         run: python main.py
